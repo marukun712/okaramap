@@ -18,7 +18,7 @@ var member = {
 var ids = []
 $.ajax({
   type: 'GET',
-  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.itsuki.id + "&key=" + key3 + "&eventType=upcoming&type=video",
+  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.itsuki.id + "&key=" + key + "&eventType=upcoming&type=video",
   datatype: 'json',
   success: function (json) {
     num = json.items.length;
@@ -35,7 +35,7 @@ $.ajax({
 
 $.ajax({
   type: 'GET',
-  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.uno.id + "&key=" + key3 + "&eventType=upcoming&type=video",
+  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.uno.id + "&key=" + key + "&eventType=upcoming&type=video",
   datatype: 'json',
   success: function (json) {
     num = json.items.length;
@@ -51,7 +51,7 @@ $.ajax({
 })
 $.ajax({
   type: 'GET',
-  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.maru.id + "&key=" + key3 + "&eventType=upcoming&type=video",
+  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.maru.id + "&key=" + key + "&eventType=upcoming&type=video",
   datatype: 'json',
   success: function (json) {
     num = json.items.length;
@@ -67,7 +67,7 @@ $.ajax({
 })
 $.ajax({
   type: 'GET',
-  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.sera.id + "&key=" + key3 + "&eventType=upcoming&type=video",
+  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.sera.id + "&key=" + key + "&eventType=upcoming&type=video",
   datatype: 'json',
   success: function (json) {
     num = json.items.length;
@@ -83,7 +83,7 @@ $.ajax({
 })
 $.ajax({
   type: 'GET',
-  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.otoha.id + "&key=" + key3 + "&eventType=upcoming&type=video",
+  url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" + member.otoha.id + "&key=" + key + "&eventType=upcoming&type=video",
   datatype: 'json',
   success: function (json) {
     num = json.items.length;
@@ -104,7 +104,7 @@ function gettime() {
   for (let i = 0; i < num; i++) {
     $.ajax({
       type: 'GET',
-      url: `https://www.googleapis.com/youtube/v3/videos?part=liveStreamingDetails&id=${ids}&key=${key3}`,
+      url: `https://www.googleapis.com/youtube/v3/videos?part=liveStreamingDetails&id=${ids}&key=${key}`,
       datatype: 'json',
       success: function (json) {
         num = json.items.length;
