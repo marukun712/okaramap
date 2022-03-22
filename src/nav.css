@@ -149,4 +149,8 @@ body {
   display: none;
 }
 
-
+footer {
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+}
