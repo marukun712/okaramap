@@ -2,140 +2,139 @@
 <html lang="jp">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <title>OkaraMap
-  </title>
-  <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"></script>
-  <link rel="stylesheet" href="nav.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>OkaraMap
+    </title>
+    <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"></script>
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-  <div class="logo_fadein">
-    <p><img src="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" alt=""></p>
-  </div>
-  <style>
-    .logo_fadein {
-      background: #FFF;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 999;
-    }
-
-    .logo_fadein p {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-      z-index: 9999;
-      width: 280px;
-    }
-
-    ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #ffffff;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #797979;
-    }
-  </style>
-  <div class="flex">
-
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-
-          <div class="menu-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="channel.html">channel</a></li>
-            <li><a href="https://github.com/marukun712/okaramap">github</a></li>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <table class="table-fixed title">
-      <thead>
-        <tr>
-          <th class="w-1/2 px-4 py-2">Title</th>
-        </tr>
-      </thead>
-      <tbody id="main">
-      </tbody>
-    </table>
-
-    <table class="table-auto">
-      <thead>
-        <tr>
-          <th class="w-1/2 px-4 py-2">image</th>
-        </tr>
-      </thead>
-      <tbody id="image">
-
-      </tbody>
-    </table>
-
-    <table class="table-fixed">
-      <thead>
-        <tr>
-          <th class="w-1/2 px-4 py-2">time</th>
-        </tr>
-      </thead>
-      <tbody id="time">
-
-      </tbody>
-    </table>
-
-
-  </div>
-
-  <footer class="bg-gray-200 text-center lg:text-left">
-    <div class="text-gray-700 text-center p-4" style="background-color: orange">
-      <h1>🐉Okaramap</h1>
-      © 2022 Copyright:
-      <a class="text-gray-800" href="https://tailwind-elements.com/">marukun</a>
+    <div class="logo_fadein">
+        <p><img src="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" alt=""></p>
     </div>
-  </footer>
+    <style>
+        .logo_fadein {
+            background: #FFF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .logo_fadein p {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            z-index: 9999;
+            width: 280px;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #797979;
+        }
+    </style>
+    <div class="flex">
 
-  <script src="keys.js"></script>
-  <script src="index.js"></script>
-  <script>
-    $(function () {
-      setTimeout(function () {
-        $('.logo_fadein p').fadeIn(500);
-      }, 50);
-      setTimeout(function () {
-        $('.logo_fadein').fadeOut(500);
-      }, 1200);
-    });
-  </script>
-  <style>
-    @media screen and (max-width: 460px) {
-      .title {
-        display: none;
-      }
-    }
-  </style>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="channel.html">channel</a></li>
+                        <li><a href="https://github.com/marukun712/okaramap">github</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <table class="table-fixed title">
+            <thead>
+                <tr>
+                    <th class="w-1/2 px-4 py-2">Title</th>
+                </tr>
+            </thead>
+            <tbody id="main">
+            </tbody>
+        </table>
+
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="w-1/2 px-4 py-2">image</th>
+                </tr>
+            </thead>
+            <tbody id="image">
+
+            </tbody>
+        </table>
+
+        <table class="table-fixed">
+            <thead>
+                <tr>
+                    <th class="w-1/2 px-4 py-2">time</th>
+                </tr>
+            </thead>
+            <tbody id="time">
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <footer class="bg-gray-200 text-center lg:text-left">
+        <div class="text-gray-700 text-center p-4" style="background-color: orange">
+            <h1>🐉Okaramap</h1>
+            © 2022 Copyright:
+            <a class="text-gray-800" href="https://tailwind-elements.com/">marukun</a>
+        </div>
+    </footer>
+
+    <script src="keys.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(function() {
+            setTimeout(function() {
+                $('.logo_fadein p').fadeIn(500);
+            }, 50);
+            setTimeout(function() {
+                $('.logo_fadein').fadeOut(500);
+            }, 1200);
+        });
+    </script>
+    <style>
+        @media screen and (max-width: 460px) {
+            .title {
+                display: none;
+            }
+        }
+    </style>
 </body>
 
 </html>
