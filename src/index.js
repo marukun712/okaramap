@@ -1,4 +1,4 @@
-fetch('http://marukunserver.ml:2100/api')
+fetch('https://marukunserver.ml:2100/api')
     .then(response => {
         return response.json();
     })
