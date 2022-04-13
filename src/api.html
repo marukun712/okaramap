@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="article" />
+
+    <meta property="og:title" content="Api" />
+
+    <meta property="og:description" content="verseⁿapi docs" />
+
+    <meta property="og:site_name" content="OkaraMap" />
+
+    <meta property="og:image" content="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" />
+    <link rel="stylesheet" href="nav.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>OkaraMap
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
+    <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
+    <style>
+         ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #797979;
+        }
+        
+        html {
+            color: #363636;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="channel.html">channel</a></li>
+                        <li><a href="api.html">Api</a></li>
+                        <li><a href="https://github.com/marukun712/okaramap">github</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main" style="margin: 5%;">
+            <h1 style="font-size: 250%; text-align: center;">verseⁿ Api</h1>
+            <h1 style="font-size: 150%; text-align: center;">verseⁿ Apiはverseⁿの配信スケジュールを取得できるApiです。</h1>
+            <img src="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" style="text-align: center;">
+            <a href="https://github.com/marukun712/verseapi"><img src="img/github.png" width="50" height="50"></a>
+            <hr style="margin: 5%;">
+            <h1 style="font-size: 200%; text-align: center;">エンドポイント</h1>
+            <div class="rounded-md bg-gray-200" style="height: 4vh;">
+                <h1 style="font-size: 150%; text-align: center;">http://marukunserver.ml:2100/api</h1>
+            </div>
+        </div>
+        <div class="sample" style="margin: 5%;">
+            <hr style="margin: 5%;">
+            <h1 style="font-size: 200%; ">Sample</h1>
+
+            <h1 style="font-size: 220%; "><span class="rounded-md bg-green-500">GET</span>/api</h1>
+            <hr style="margin: 5%;">
+            <button class="rounded-md bg-blue-500" style=" width: 80%; height: 5vh;" onclick="req();">request</button>
+            <pre id="resarea"></pre>
+        </div>
+    </div>
+    <div class="bg-gray-200 text-center lg:text-left footer">
+        <div class="text-gray-700 text-center p-4" style="background-color: orange">
+            <h1>🐉Okaramap</h1>
+            © 2022 Copyright:
+            <a class="text-gray-800" href="https://tailwind-elements.com/">marukun</a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/src/nav.css">
+    <script>
+        function req() {
+            fetch('http://marukunserver.ml:2100/api')
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    var num = data.length
+                    var json = JSON.stringify(data, null, num)
+                    $("#resarea").append(`<h1>${json}</h1>`)
+                    console.log(json)
+                })
+        }
+    </script>
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>

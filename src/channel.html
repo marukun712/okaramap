@@ -1,218 +1,226 @@
 <!DOCTYPE html>
 <html lang="jp">
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="StyleSheet" href="nav.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <title>OkaraMap
-  </title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
-  <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
-  <style>
-    ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-    }
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="article" />
 
-    ::-webkit-scrollbar-track {
-      background: #ffffff;
-    }
+    <meta property="og:title" content="channel" />
 
-    ::-webkit-scrollbar-thumb {
-      background: #797979;
-    }
-  </style>
+    <meta property="og:description" content="verseⁿのメンバー一覧" />
+
+    <meta property="og:site_name" content="OkaraMap" />
+
+    <meta property="og:image" content="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" />
+    <link rel="stylesheet" href="nav.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>OkaraMap
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
+    <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
+    <style>
+         ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #797979;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="flex">
+    <div class="flex">
 
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
 
-          <div class="menu-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="channel.html">channel</a></li>
-            <li><a href="https://github.com/marukun712/okaramap">github</a></li>
-          </div>
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="channel.html">channel</a></li>
+                        <li><a href="api.html">Api</a></li>
+                        <li><a href="https://github.com/marukun712/okaramap">github</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div class="card card-skin">
+                        <div class="card__imgframe" style="background:url(img/maru.jpg); background-size: cover;">
+                            <a href="https://www.youtube.com/channel/UCOg01LJmZF9UnwFbly73CVw"><img src="img/icon_154430_256.png" width="63" height="63"></a>
+                            <a href="https://twitter.com/nanamona_mr"><img src="img/Twitter-logo.svg.png" width="63" height="63"></a>
+                        </div>
+
+                        <div class="card__textbox">
+                            <div class="card__titletext">
+                                マル・ナナモナ
+
+                            </div>
+                            <div class="card__overviewtext">
+                                人見知りだが、友人想いで心優しい少女。 マイペースで独特の感性を持っており、時々周囲を置いてけぼりにさせる。のんびりとした雰囲気に反して頭が良く、語学を中心に幅広い知識を持っている。 </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card card-skin">
+                        <div class="card__imgframe" style="background:url(img/ituki.jpg); background-size: cover;">
+                            <a href="https://www.youtube.com/channel/UCi3aT9cC6YyC0BnOpm2XBEw"><img src="img/icon_154430_256.png" width="63" height="63"></a>
+                            <a href="https://twitter.com/itsuki_htsr"><img src="img/Twitter-logo.svg.png" width="63" height="63"></a>
+                        </div>
+
+                        <div class="card__textbox">
+                            <div class="card__titletext">
+                                ヒトシロ・イツキ
+                            </div>
+                            <div class="card__overviewtext">
+                                真面目で努力家、面倒見もよい頼れる少女。 厳しい規律の中で育ったため、少し堅苦しいところがある。その反動なのか色々なことに興味を持ち、何に対してもチャレンジする精神がある。
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card card-skin">
+                        <div class="card__imgframe" style="background:url(img/uno.jpg); background-size: cover;">
+                            <a href="https://www.youtube.com/channel/UCLfAsY3iMUAF2vvDxvIjymQ"><img src="img/icon_154430_256.png" width="63" height="63"></a>
+                            <a href="https://twitter.com/uno_kgs"><img src="img/Twitter-logo.svg.png" width="63" height="63"></a>
+                        </div>
+
+                        <div class="card__textbox">
+                            <div class="card__titletext">
+                                カガセ・ウノ
+                            </div>
+                            <div class="card__overviewtext">
+                                明るく無邪気で自由奔放な少女。 騒がしく厄介ごとにもすぐ首をつっこむような性格だが、誰よりも場の雰囲気に敏感。自分なりのポリシーを持ちつつ、皆を引っ張るムードメーカー。
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card card-skin">
+                        <div class="card__imgframe" style="background:url(img/sera.jpg); background-size: cover;">
+                            <a href="https://www.youtube.com/channel/UCvXsXmpMKthJuX8XHbsnOjQ"><img src="img/icon_154430_256.png" width="63" height="63"></a>
+                            <a href="https://twitter.com/sera_alb"><img src="img/Twitter-logo.svg.png" width="63" height="63"></a>
+                        </div>
+
+                        <div class="card__textbox">
+                            <div class="card__titletext">
+                                アルバ・セラ
+                            </div>
+                            <div class="card__overviewtext">
+                                孤独の中でも自分の信念を貫く少女。 ストイックで人付き合いはあまり得意ではないが、他者を想うこともでき可愛らしい少女の一面も覗かせる。迷いや葛藤の中で強く想いを歌い上げる。
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card card-skin">
+                        <div class="card__imgframe" style="background:url(img/otoha.jpg); background-size: cover;">
+                            <a href="https://www.youtube.com/channel/UCYcnLc0n1ryBDZeGWQTVJ_g"><img src="img/icon_154430_256.png" width="63" height="63"></a>
+                            <a href="https://twitter.com/otoha_ks"><img src="img/Twitter-logo.svg.png" width="63" height="63"></a>
+                        </div>
+
+                        <div class="card__textbox">
+                            <div class="card__titletext">
+                                カシ・オトハ
+                            </div>
+                            <div class="card__overviewtext">
+                                飄々としているが、誰よりも思慮深い少女。 すべてが満たされた世界で育つも、何かがひっかかり常識に対して疑問を抱く。誰もが抱えつつも言葉にできない感情を歌い、世界に抗い、人々に寄り添う。
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
 
-    <div id="main">
-      <ul style="list-style: none; display: flex;">
-        <li>
-          <div class="card card-skin">
-            <div class="card__imgframe" style="background:url(img/maru.jpg); background-size: cover;">
-              <a href="https://www.youtube.com/channel/UCOg01LJmZF9UnwFbly73CVw"><img src="img/icon_154430_256.png"
-                  width="63" height="63"></a>
-            </div>
 
-            <div class="card__textbox">
-              <div class="card__titletext">
-                マル・ナナモナ
-
-              </div>
-              <div class="card__overviewtext">
-                人見知りだが、友人想いで心優しい少女。
-                マイペースで独特の感性を持っており、時々周囲を置いてけぼりにさせる。のんびりとした雰囲気に反して頭が良く、語学を中心に幅広い知識を持っている。 </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card card-skin">
-            <div class="card__imgframe" style="background:url(img/ituki.jpg); background-size: cover;">
-              <a href="https://www.youtube.com/channel/UCi3aT9cC6YyC0BnOpm2XBEw"><img src="img/icon_154430_256.png"
-                  width="63" height="63"></a>
-            </div>
-
-            <div class="card__textbox">
-              <div class="card__titletext">
-                ヒトシロ・イツキ
-              </div>
-              <div class="card__overviewtext">
-                真面目で努力家、面倒見もよい頼れる少女。
-                厳しい規律の中で育ったため、少し堅苦しいところがある。その反動なのか色々なことに興味を持ち、何に対してもチャレンジする精神がある。</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card card-skin">
-            <div class="card__imgframe" style="background:url(img/uno.jpg); background-size: cover;">
-              <a href="https://www.youtube.com/channel/UCLfAsY3iMUAF2vvDxvIjymQ"><img src="img/icon_154430_256.png"
-                  width="63" height="63"></a>
-            </div>
-
-            <div class="card__textbox">
-              <div class="card__titletext">
-                カガセ・ウノ
-              </div>
-              <div class="card__overviewtext">
-                明るく無邪気で自由奔放な少女。
-                騒がしく厄介ごとにもすぐ首をつっこむような性格だが、誰よりも場の雰囲気に敏感。自分なりのポリシーを持ちつつ、皆を引っ張るムードメーカー。</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card card-skin">
-            <div class="card__imgframe" style="background:url(img/sera.jpg); background-size: cover;">
-              <a href="https://www.youtube.com/channel/UCvXsXmpMKthJuX8XHbsnOjQ"><img src="img/icon_154430_256.png"
-                  width="63" height="63"></a>
-            </div>
-
-            <div class="card__textbox">
-              <div class="card__titletext">
-                アルバ・セラ
-              </div>
-              <div class="card__overviewtext">
-                孤独の中でも自分の信念を貫く少女。
-                ストイックで人付き合いはあまり得意ではないが、他者を想うこともでき可愛らしい少女の一面も覗かせる。迷いや葛藤の中で強く想いを歌い上げる。</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card card-skin">
-            <div class="card__imgframe" style="background:url(img/otoha.jpg); background-size: cover;">
-              <a href="https://www.youtube.com/channel/UCYcnLc0n1ryBDZeGWQTVJ_g"><img src="img/icon_154430_256.png"
-                  width="63" height="63"></a>
-            </div>
-
-            <div class="card__textbox">
-              <div class="card__titletext">
-                カシ・オトハ
-              </div>
-              <div class="card__overviewtext">
-                飄々としているが、誰よりも思慮深い少女。
-                すべてが満たされた世界で育つも、何かがひっかかり常識に対して疑問を抱く。誰もが抱えつつも言葉にできない感情を歌い、世界に抗い、人々に寄り添う。</div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <style>
+            li {
+                margin: 2px;
+            }
+            
+            .card {
+                width: 250px;
+                height: auto;
+                float: left;
+                margin: 15px;
+            }
+            
+            .card__imgframe {
+                width: 100%;
+                height: auto;
+                padding-top: 56.25%;
+                background-size: cover;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .card__textbox {
+                width: 100%;
+                height: auto;
+                padding: 20px 18px;
+                background: #ffffff;
+                box-sizing: border-box;
+            }
+            
+            .card__textbox>*+* {
+                margin-top: 10px;
+            }
+            
+            .card__titletext {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 125%;
+            }
+            
+            .card__overviewtext {
+                font-size: 12px;
+                line-height: 150%;
+            }
+            
+            .card-skin {
+                overflow: hidden;
+                border-radius: 8px;
+                border-left: solid 1px #ddd;
+                border-right: solid 1px #ddd;
+                border-bottom: solid 5px #888;
+            }
+        </style>
     </div>
-
-
+    <div class="bg-gray-200 text-center lg:text-left footer">
+        <div class="text-gray-700 text-center p-4" style="background-color: orange">
+            <h1>🐉Okaramap</h1>
+            © 2022 Copyright:
+            <a class="text-gray-800" href="https://tailwind-elements.com/">marukun</a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/src/nav.css">
     <style>
-      li {
-        margin: 2px;
-      }
-
-      .card {
-        width: 250px;
-        height: auto;
-        float: left;
-        margin: 15px;
-      }
-
-      .card__imgframe {
-        width: 100%;
-        height: auto;
-        padding-top: 56.25%;
-        background-size: cover;
-        box-sizing: border-box;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .card__textbox {
-        width: 100%;
-        height: auto;
-        padding: 20px 18px;
-        background: #ffffff;
-        box-sizing: border-box;
-      }
-
-      .card__textbox>*+* {
-        margin-top: 10px;
-      }
-
-      .card__titletext {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 125%;
-      }
-
-      .card__overviewtext {
-        font-size: 12px;
-        line-height: 150%;
-      }
-
-      .card-skin {
-        overflow: hidden;
-        border-radius: 8px;
-        border-left: solid 1px #ddd;
-        border-right: solid 1px #ddd;
-        border-bottom: solid 5px #888;
-
-      }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
-  </div>
-  <div class="bg-gray-200 text-center lg:text-left footer">
-    <div class="text-gray-700 text-center p-4" style="background-color: orange">
-      <h1>🐉Okaramap</h1>
-      © 2022 Copyright:
-      <a class="text-gray-800" href="https://tailwind-elements.com/">marukun</a>
-    </div>
-  </div>
-<link rel="stylesheet" href="/src/nav.css">
-<style>
-  .footer {
-  position: fixed;
-bottom: 0;  width: 100%;
-}
-</style>
 </body>
 
 </html>
