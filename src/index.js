@@ -1,4 +1,4 @@
-fetch('https://marukunserver.ml:2100/api')
+fetch('https://marukun-dev.com/youtube/verse')
     .then(response => {
         return response.json();
     })
