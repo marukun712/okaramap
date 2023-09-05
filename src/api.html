@@ -58,31 +58,31 @@
 
                     <div class="menu-items">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="channel.html">channel</a></li>
-                        <li><a href="api.html">Api</a></li>
-                        <li><a href="https://github.com/marukun712/okaramap">github</a></li>
+                        <li><a href="channel.html">Channel</a></li>
+                        <li><a href="api.html">API</a></li>
+                        <li><a href="https://github.com/marukun712/okaramap">Github</a></li>
                     </div>
                 </div>
             </div>
         </nav>
 
         <div id="main" style="margin: 5%;">
-            <h1 style="font-size: 250%; text-align: center;">verseⁿ API</h1>
-            <h1 style="font-size: 150%; text-align: center;">verseⁿ APIはverseⁿの配信スケジュールを取得できるAPIです。</h1>
+            <h1 style="font-size: 250%; text-align: center;">VERSEⁿ API</h1>
+            <h1 style="font-size: 150%; text-align: center;">VERSEⁿ APIはVERSEⁿの配信スケジュールを取得できるAPIです。</h1>
             <img src="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png"
                 style="text-align: center;">
             <a href="https://github.com/marukun712/verseapi"><img src="img/github.png" width="50" height="50"></a>
             <hr style="margin: 5%;">
             <h1 style="font-size: 200%; text-align: center;">エンドポイント</h1>
             <div class="rounded-md bg-gray-200" style="height: 4vh;">
-                <h1 style="font-size: 150%; text-align: center;">https://marukun-dev.com/youtube/verse</h1>
+                <h1 style="font-size: 150%; text-align: center;">https://marukun-dev.com/verse/</h1>
             </div>
         </div>
         <div class="sample" style="margin: 5%;">
             <hr style="margin: 5%;">
             <h1 style="font-size: 200%; ">Sample</h1>
 
-            <h1 style="font-size: 220%; "><span class="rounded-md bg-green-500">GET</span>/</h1>
+            <h1 style="font-size: 220%; "><span class="rounded-md bg-green-500">GET</span>/api</h1>
             <hr style="margin: 5%;">
             <button class="rounded-md bg-blue-500" style=" width: 80%; height: 5vh;" onclick="req();">request</button>
             <pre id="resarea"></pre>
@@ -98,7 +98,7 @@
     <link rel="stylesheet" href="/src/nav.css">
     <script>
         function req() {
-            fetch('https://marukun-dev.com/youtube/verse')
+            fetch('https://marukun-dev.com/verse/api')
                 .then(response => {
                     return response.json();
                 })

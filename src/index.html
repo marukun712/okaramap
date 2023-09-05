@@ -18,7 +18,8 @@
     <meta property="og:image" content="https://verse-n.com/wp-content/themes/verse/assets/img/top/mv_logo.png" />
 
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>OkaraMap
     </title>
     <link rel="icon" href="https://emojigraph.org/media/twitter/dragon_1f409.png">
@@ -41,7 +42,7 @@
             width: 100%;
             z-index: 999;
         }
-        
+
         .logo_fadein p {
             position: fixed;
             left: 50%;
@@ -51,17 +52,17 @@
             z-index: 9999;
             width: 280px;
         }
-        
-         ::-webkit-scrollbar {
+
+        ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
         }
-        
-         ::-webkit-scrollbar-track {
+
+        ::-webkit-scrollbar-track {
             background: #ffffff;
         }
-        
-         ::-webkit-scrollbar-thumb {
+
+        ::-webkit-scrollbar-thumb {
             background: #797979;
         }
     </style>
@@ -79,9 +80,9 @@
 
                     <div class="menu-items">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="channel.html">channel</a></li>
-                        <li><a href="api.html">Api</a></li>
-                        <li><a href="https://github.com/marukun712/okaramap">github</a></li>
+                        <li><a href="channel.html">Channel</a></li>
+                        <li><a href="api.html">API</a></li>
+                        <li><a href="https://github.com/marukun712/okaramap">Github</a></li>
                     </div>
                 </div>
             </div>
@@ -129,14 +130,13 @@
         </div>
     </footer>
 
-    <script src="keys.js"></script>
     <script src="index.js"></script>
     <script>
-        $(function() {
-            setTimeout(function() {
+        $(function () {
+            setTimeout(function () {
                 $('.logo_fadein p').fadeIn(500);
             }, 50);
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.logo_fadein').fadeOut(500);
             }, 1200);
         });
